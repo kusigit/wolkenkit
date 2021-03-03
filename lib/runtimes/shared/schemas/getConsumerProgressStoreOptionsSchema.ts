@@ -60,7 +60,13 @@ const getConsumerProgressStoreOptionsSchema = function (): Schema {
           database: { type: 'string', minLength: 1 },
           encryptConnection: {
             oneOf: [
-              { type: 'boolean' }
+              { type: 'boolean' },
+              {
+                type: 'object',
+                properties: {
+                  rejectUnauthorized: { type: 'boolean' }
+                }
+              }
             ]
           },
           tableNames: {
