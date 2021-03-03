@@ -49,6 +49,16 @@ class PostgresConsumerProgressStore implements ConsumerProgressStore {
     encryptConnection,
     tableNames
   }: PostgresConsumerProgressStoreOptions): Promise<PostgresConsumerProgressStore> {
+    // eslint-disable-next-line no-console
+    console.log('storeOptions', {
+      host: hostName,
+      port,
+      user: userName,
+      password,
+      database,
+      ssl: encryptConnection
+    });
+
     const pool = new Pool({
       host: hostName,
       port,

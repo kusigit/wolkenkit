@@ -23,6 +23,15 @@ class PostgresConsumerProgressStore {
         return database;
     }
     static async create({ hostName, port, userName, password, database, encryptConnection, tableNames }) {
+        // eslint-disable-next-line no-console
+        console.log('storeOptions', {
+            host: hostName,
+            port,
+            user: userName,
+            password,
+            database,
+            ssl: encryptConnection
+        });
         const pool = new pg_1.Pool({
             host: hostName,
             port,
