@@ -65,7 +65,9 @@ const getConsumerProgressStoreOptionsSchema = function (): Schema {
                 type: 'object',
                 properties: {
                   rejectUnauthorized: { type: 'boolean' }
-                }
+                },
+                required: [ 'rejectUnauthorized' ],
+                additionalProperties: false
               }
             ]
           },
