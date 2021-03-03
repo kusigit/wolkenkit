@@ -1,0 +1,1 @@
+{"version":3,"file":"getErrorService.js","sourceRoot":"","sources":["../../../../lib/common/services/getErrorService.ts"],"names":[],"mappings":";;;AAAA,sCAAgD;AAGhD,MAAM,eAAe,GAAG,UAAgD,EAAE,MAAM,EAE/E;IACC,MAAM,YAAY,GAAgC,EAAE,CAAC;IAErD,KAAK,MAAM,KAAK,IAAI,MAAM,EAAE;QAC1B,YAAY,CAAC,KAAK,CAAC,GAAG,eAAS,CAAC,KAAK,CAAC,CAAC;KACxC;IAED,OAAO,YAAkC,CAAC;AAC5C,CAAC,CAAC;AAEO,0CAAe"}
