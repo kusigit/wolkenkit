@@ -1,3 +1,5 @@
+/// <reference types="node" />
+import { ConnectionOptions } from 'tls';
 import { TableNames } from './TableNames';
 export interface PostgresConsumerProgressStoreOptions {
     type: 'Postgres';
@@ -6,6 +8,6 @@ export interface PostgresConsumerProgressStoreOptions {
     userName: string;
     password: string;
     database: string;
-    encryptConnection?: boolean;
+    encryptConnection?: boolean | ConnectionOptions;
     tableNames: TableNames;
 }
