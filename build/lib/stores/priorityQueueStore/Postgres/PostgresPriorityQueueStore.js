@@ -38,7 +38,7 @@ class PostgresPriorityQueueStore {
         });
         return database;
     }
-    static async create({ doesIdentifierMatchItem, expirationTime = 15000, hostName, port, userName, password, database, encryptConnection = false, tableNames }) {
+    static async create({ doesIdentifierMatchItem, expirationTime = 15000, hostName, port, userName, password, database, encryptConnection, tableNames }) {
         const pool = new pg_1.Pool({
             host: hostName,
             port,
