@@ -22,7 +22,7 @@ class PostgresConsumerProgressStore {
         });
         return database;
     }
-    static async create({ hostName, port, userName, password, database, encryptConnection, tableNames }) {
+    static async create({ hostName, port, userName, password, database, encryptConnection = false, tableNames }) {
         // eslint-disable-next-line no-console
         console.log('storeOptions', {
             host: hostName,
