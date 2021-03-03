@@ -78,6 +78,9 @@ const consumerProgressPostgresCommand = function (): Command<ConsumerProgressPos
       try {
         buntstift.info('Setting up the PostgreSQL consumer progress store...');
 
+        // eslint-disable-next-line no-console
+        console.log('storeOptions', storeOptions);
+
         const store = await createConsumerProgressStore(storeOptions);
 
         await store.setup();
