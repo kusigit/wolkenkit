@@ -14,7 +14,7 @@ class SqlServerDomainEventStore {
     static onUnexpectedClose() {
         throw new Error('Connection closed unexpectedly.');
     }
-    static async create({ hostName, port, userName, password, database, encryptConnection = false, tableNames }) {
+    static async create({ hostName, port, userName, password, database, encryptConnection, tableNames }) {
         const pool = new mssql_1.ConnectionPool({
             server: hostName,
             port,

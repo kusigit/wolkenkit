@@ -30,7 +30,7 @@ class SqlServerConsumerProgressStore implements ConsumerProgressStore {
     userName,
     password,
     database,
-    encryptConnection = false,
+    encryptConnection,
     tableNames
   }: SqlServerConsumerProgressStoreOptions): Promise<SqlServerConsumerProgressStore> {
     const pool = new ConnectionPool({

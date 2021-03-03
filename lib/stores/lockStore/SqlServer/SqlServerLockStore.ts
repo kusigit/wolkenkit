@@ -28,7 +28,7 @@ class SqlServerLockStore implements LockStore {
     userName,
     password,
     database,
-    encryptConnection = false,
+    encryptConnection,
     tableNames
   }: SqlServerLockStoreOptions): Promise<SqlServerLockStore> {
     const pool = new ConnectionPool({

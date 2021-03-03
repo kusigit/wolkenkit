@@ -34,7 +34,7 @@ class SqlServerDomainEventStore implements DomainEventStore {
     userName,
     password,
     database,
-    encryptConnection = false,
+    encryptConnection,
     tableNames
   }: SqlServerDomainEventStoreOptions): Promise<SqlServerDomainEventStore> {
     const pool = new ConnectionPool({
